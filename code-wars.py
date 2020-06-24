@@ -40,3 +40,12 @@ def take(arr,n):
 def zeroFuel(distance_to_pump, mpg, fuel_left):
     return distance_to_pump <= mpg * fuel_left
 
+
+#  Simple, given a string of words, return the length of the shortest word(s).
+def find_short(s):
+    return min(len(x) for x in s.split())
+
+#  Complete the function which takes two arguments and returns all numbers which are divisible by the given divisor. First argument is an array of numbers and the second is the divisor.
+
+def divisible_by(numbers, divisor):
+    return [x for x in numbers if x%divisor == 0]
