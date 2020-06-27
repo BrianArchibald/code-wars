@@ -59,3 +59,16 @@ If there is enough space, return 0, and if there isn't, return the number of pas
 
 def enough(cap, on, wait):
     return max(0, wait - (cap - on))
+
+#  Given 2 elevators (named "left" and "right") in a building with 3 floors (numbered 0 to 2), write a function elevator accepting 3 arguments (in order):
+
+left - The current floor of the left elevator
+right - The current floor of the right elevator
+call - The floor that called an elevator
+It should return the name of the elevator closest to the called floor ("left"/"right").
+
+In the case where both elevators are equally distant from the called floor, choose the elevator to the right.
+
+def elevator(left, right, call):
+    return "left" if abs(call - left) < abs(call - right) else "right"
+
