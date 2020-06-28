@@ -72,3 +72,13 @@ In the case where both elevators are equally distant from the called floor, choo
 def elevator(left, right, call):
     return "left" if abs(call - left) < abs(call - right) else "right"
 
+#  Simple, remove the spaces from the string, then return the resultant string.
+
+def no_space(x):
+    return x.replace(' ' ,'')
+
+#  Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+def remove_char(s):
+    return s[1 : -1]
+
