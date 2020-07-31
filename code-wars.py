@@ -96,3 +96,13 @@ def litres(time):
 # Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
 def invert(lst):
     return [-x for x in lst]
+
+# The cockroach is one of the fastest insects. Write a function which takes its speed in km per hour and returns it in cm per second, rounded down to the integer (= floored).
+import math
+
+def cockroach_speed(s):
+    return math.floor(s * 27.7778)
+    # or
+    # return s // 0.036
+
+
