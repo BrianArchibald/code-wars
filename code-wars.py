@@ -126,5 +126,17 @@ def area_or_perimeter(l , w):
         return l * w
     return l * 2 + w * 2
 
+#  Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
 
+def greet(name):
+    if name == "Johnny":
+        return "Hello, my love!"
+    return "Hello, {name}!".format(name=name)
+
+#  In this simple exercise, you will build a program that takes a value, integer, and returns a list of its multiples up to another value, limit. If limit is a multiple of integer, it should be included as well. There will only ever be positive integers passed into the function, not consisting of 0. The limit will always be higher than the base.
+#  For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
+#  If you can, try writing it in only one line of code.
+
+def find_multiples(integer, limit):
+    return list(range(integer, limit+1, integer))
 
