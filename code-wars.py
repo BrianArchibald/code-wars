@@ -141,7 +141,7 @@ def find_multiples(integer, limit):
     return list(range(integer, limit+1, integer))
 
 #  Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World! if name is not given (or passed as an empty String).
-#  Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).    
+#  Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).
 
 def hello(name=''):
     return f"Hello, {name.title() or 'World'}!"
@@ -158,3 +158,14 @@ def monkey_count(n):
 
 def monkey_count(n):
     return range(1, n+1)
+
+# Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+# Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+# Create a function which translates a given DNA string into RNA.
+# For example:
+# "GCAT"  =>  "GCAU"
+# The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+
+def dna_to_rna(dna):
+    return dna.replace('T', 'U')
+
