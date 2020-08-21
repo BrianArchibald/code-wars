@@ -169,3 +169,16 @@ def monkey_count(n):
 def dna_to_rna(dna):
     return dna.replace('T', 'U')
 
+# Write a method sum (sum_array in python, sumarray in julia, SumArray in C#) that takes an array of numbers and returns the sum of the numbers. These may be integers or decimals for Ruby and any instance of Num for Haskell. The numbers can also be negative. If the array does not contain any numbers then you should return 0.
+
+def sum_array(a):
+    return sum(a)
+
+# Sum all the numbers of the array (in F# and Haskell you get a list) except the highest and the lowest element (the value, not the index!).
+# (The highest/lowest element is respectively only one element at each edge, even if there are more than
+
+def sum_array(arr):
+    if arr == None or len(arr) < 3:
+        return 0
+    return sum(arr) - max(arr) - min(arr)
+
