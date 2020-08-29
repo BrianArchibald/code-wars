@@ -182,3 +182,23 @@ def sum_array(arr):
         return 0
     return sum(arr) - max(arr) - min(arr)
 
+# We want an array, but not just any old array, an array with contents!
+# Write a function that produces an array with the numbers 0 to N-1 in it.
+
+def arr(n=0):
+    return list(range(n))
+
+# Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+# [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+def grow(arr):
+    return reduce(lambda x, y: x * y, arr)
+
+# or
+
+def grow(arr):
+    product = 1
+    for i in arr:
+        product *= i
+    return product
+
