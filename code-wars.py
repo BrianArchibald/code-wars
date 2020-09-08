@@ -214,3 +214,21 @@ def grow(arr):
 def is_divide_by(number, a, b):
     return number % a == 0 and number % b == 0
 
+# Your function will be called char_freq/charFreq/CharFreq and you will get passed a string, you will then return a dictionary
+# (object in JavaScript) with as keys the characters,
+# and as values how many times that character is in the string. You can assume you will be given valid input.
+
+def char_freq(message):
+    result = {}
+    for letter in message:
+        result[letter] = result.get(letter, 0) + 1
+    return result
+
+# or
+
+from collections import Counter
+
+def char_freq(message):
+    return Counter(message)
+
+
