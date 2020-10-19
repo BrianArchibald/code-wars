@@ -320,3 +320,9 @@ def minimum(arr):
 
 def maximum(arr):
     return max(arr)
+
+#  Switch gravity of the boxes
+# flip('R', [3, 2, 1, 2])     =>  [1, 2, 2, 3]
+# 
+ def flip(d,a):
+    return sorted(a, reverse=d=='L')
