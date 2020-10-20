@@ -323,6 +323,14 @@ def maximum(arr):
 
 #  Switch gravity of the boxes
 # flip('R', [3, 2, 1, 2])     =>  [1, 2, 2, 3]
-# 
+#
  def flip(d,a):
     return sorted(a, reverse=d=='L')
+
+# You are given two interior angles (in degrees) of a triangle.
+# Write a function to return the 3rd.
+# Note: only positive integers will be tested.
+
+def other_angle(a, b):
+    return 180 - (a + b)
+
