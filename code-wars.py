@@ -334,3 +334,9 @@ def maximum(arr):
 def other_angle(a, b):
     return 180 - (a + b)
 
+# Write a function that rearranges an integer into its largest possible value.
+# super_size(123456) # 654321
+# super_size(105)    # 510
+# super_size(12)     # 21
+def super_size(n):
+    return int(''.join(sorted(str(n), reverse = True)))
