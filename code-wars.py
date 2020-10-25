@@ -346,3 +346,11 @@ def super_size(n):
 
 def repeats(arr):
     return sum([x for x in arr if arr.count(x) == 1])
+
+# In this kata, we will be using a more complicated sequence: 0, 1, 3, 6, 10, 15, 21, 28, ... This sequence is generated with the pattern: "the nth term is the sum of numbers from 0 to n, inclusive".
+from itertools import accumulate
+
+def sum_of_n(n):
+    if n >= 0:
+        return list(accumulate(range(n+1)))
+    return list(accumulate(range(0, n-1, -1)))
