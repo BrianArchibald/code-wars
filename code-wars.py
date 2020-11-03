@@ -354,3 +354,9 @@ def sum_of_n(n):
     if n >= 0:
         return list(accumulate(range(n+1)))
     return list(accumulate(range(0, n-1, -1)))
+
+#  Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+#  Return your answer as a number.
+
+def sum_mix(arr):
+    return sum([int(i) for i in arr])
