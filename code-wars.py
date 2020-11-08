@@ -365,3 +365,8 @@ def sum_mix(arr):
 
 def simple_multiplication(number) :
     return number * 9 if number % 2 else number * 8
+
+# Given a number n, return the number of positive odd numbers below n, EASY!
+def odd_count(n):
+    return len(range(1, n, 2))
+
