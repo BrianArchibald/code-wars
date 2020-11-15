@@ -396,3 +396,9 @@ def check_exam(arr1,arr2):
             score -= 1
 
     return score if score >= 0  else 0
+
+# Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+
+def greet(name):
+    return "Hello, {} how are you doing today?".format(name)
+
