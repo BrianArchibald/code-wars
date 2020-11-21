@@ -402,3 +402,7 @@ def check_exam(arr1,arr2):
 def greet(name):
     return "Hello, {} how are you doing today?".format(name)
 
+# Create a method is_uppercase() to see whether the string is ALL CAPS.
+def is_uppercase(inp):
+    return inp.isupper()
+
