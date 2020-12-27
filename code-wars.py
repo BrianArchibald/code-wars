@@ -450,3 +450,11 @@ def consecutive(arr):
 def duty_free(price, discount, holiday_cost):
     saving = price * discount / 100.0
     return int(holiday_cost / saving)
+
+# Create a function that takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string):
+
+#   sum_str("4", "5")    # should output "9"
+#   sum_str("34", "5")   # should output "39"
+
+def sum_str(a, b):
+    return str(int(a or 0) + int(b or 0))
