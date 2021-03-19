@@ -458,3 +458,12 @@ def duty_free(price, discount, holiday_cost):
 
 def sum_str(a, b):
     return str(int(a or 0) + int(b or 0))
+
+# Your function takes two arguments:
+# current father's age (years)
+# current age of his son (years)
+# Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).
+
+def twice_as_old(dad_years_old, son_years_old):
+    #. if son 15 , dad 50 = son * 2 = 30
+    return abs(dad_years_old - son_years_old * 2)
