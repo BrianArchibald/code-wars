@@ -467,3 +467,26 @@ def sum_str(a, b):
 def twice_as_old(dad_years_old, son_years_old):
     #. if son 15 , dad 50 = son * 2 = 30
     return abs(dad_years_old - son_years_old * 2)
+
+# Write a function to split a string and convert it into an array of words. For example:
+def string_to_split(s):
+    return s.split(' ')
+
+# Write function bmi that calculates body mass index (bmi = weight / height2).
+
+# if bmi <= 18.5 return "Underweight"
+# if bmi <= 25.0 return "Normal"
+# if bmi <= 30.0 return "Overweight"
+# if bmi > 30 return "Obese"
+
+def bmi(weight, height):
+    bmi = weight / height ** 2
+    if bmi <= 18.5:
+        return "Underweight"
+    elif bmi <= 25:
+        return "Normal"
+    elif bmi <= 30:
+        return "Overweight"
+    else:
+        return "Obese"
+
