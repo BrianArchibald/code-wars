@@ -490,3 +490,7 @@ def bmi(weight, height):
     else:
         return "Obese"
 
+# Print a list of numbers the length of n
+def pre_fizz(n):
+    return list(range(1, n+1))
+
