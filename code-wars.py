@@ -494,3 +494,23 @@ def bmi(weight, height):
 def pre_fizz(n):
     return list(range(1, n+1))
 
+# You're at the zoo... all the meerkats look weird. Something has gone terribly wrong - someone has gone and switched their heads and tails around!
+# Save the animals by switching them back. You will be given an array which will have three values (tail, body, head). It is your job to re-arrange the array so that the animal is the right way round (head, body, tail).
+# Same goes for all the other arrays/lists that you will get in the tests: you have to change the element positions with the same exact logics
+
+def fix_the_meerkat(arr):
+    return arr[::-1]
+
+# or
+
+def fix_the_meerkat(arr):
+    arr.reverse()
+    return arr
+
+# Return the Nth Even Number
+# nthEven(1) //=> 0, the first even number is 0
+# nthEven(3) //=> 4, the 3rd even number is 4 (0, 2, 4)
+# nthEven(100) //=> 198
+# nthEven(1298734) //=> 2597466
+
+
