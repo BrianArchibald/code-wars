@@ -513,4 +513,14 @@ def fix_the_meerkat(arr):
 # nthEven(100) //=> 198
 # nthEven(1298734) //=> 2597466
 
+def nth_even(n):
+    return 2 * (n - 1);
 
+# Task
+# Your task is to return the correct string using the Template String Feature.
+# Input
+# Two Strings, no validation is needed.
+# Output
+# You must output a string containing the two strings with the word ```' are '```
+def temple_strings(obj, feature):
+    return "{} are {}".format(obj, feature)
