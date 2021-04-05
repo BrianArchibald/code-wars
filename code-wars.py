@@ -524,3 +524,9 @@ def nth_even(n):
 # You must output a string containing the two strings with the word ```' are '```
 def temple_strings(obj, feature):
     return "{} are {}".format(obj, feature)
+
+# Write a function, gooseFilter / goose-filter / goose_filter / GooseFilter, that takes an array of strings as an argument and returns a filtered array containing the same elements but with the 'geese' removed.
+geese = {"African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"}
+
+def goose_filter(birds):
+    return [bird for bird in birds if bird not in geese]
