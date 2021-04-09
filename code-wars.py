@@ -540,3 +540,20 @@ def mango(quantity, price):
 def swap_values(args):
     args[0], args[1] = args[1], args[0]
     return args
+
+# Given a string made up of letters a, b, and/or c, switch the position of letters a and b (change a to b and vice versa). Leave any incidence of c untouched.
+def switcheroo(s):
+    return s.translate(str.maketrans('ab','ba'))
+
+# or
+
+def switcheroo(string):
+    result = ''
+    for letter in string:
+        if letter == 'a':
+            letter = 'b'
+        elif letter == 'b':
+            letter = 'a'
+        result += letter
+    return result
+
