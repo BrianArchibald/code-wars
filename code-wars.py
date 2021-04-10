@@ -556,4 +556,3 @@ def switcheroo(string):
             letter = 'a'
         result += letter
     return result
-
