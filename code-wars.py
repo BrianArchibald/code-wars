@@ -556,3 +556,7 @@ def switcheroo(string):
             letter = 'a'
         result += letter
     return result
+
+# Write a function which converts the input string to uppercase.
+def make_upper_case(s):
+        return s.upper()
